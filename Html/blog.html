@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQ</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .lexend-font {
+      font-family: "Lexend", sans-serif;
+    }
+  </style>
 </head>
-<body>
-    
+<body class="lexend-font">
+     <!-- navbar section -->
+     <nav
+     class="navbar bg-[#F9F7F3] flex md:flex-row flex-col justify-between p-4 gap-4 md:gap-0"
+   >
+     <!-- blog btn -->
+     <div>
+       <button class="btn text-lg bg-[#B4F461]">
+         <a href="../Html/index.html">Home</a></button>
+     </div>
+     <!-- logo + text -->
+     <div class="flex items-center gap-2">
+       <img src="../assets/logo.png" alt="" />
+       <span class="md:text-3xl text-2xl font-bold">DonationCampaign</span>
+     </div>
+
+     <!-- account balance -->
+     <div class="flex items-center gap-2">
+       <img src="../assets/coin.png" alt="" />
+       <h3 class="flex items-center gap-2 font-bold text-lg">
+         <span>100000</span> ৳ BDT
+       </h3>
+     </div>
+   </nav>
+    <section class=" py-32 min-h-screen">
+        <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+          <h2 class="mb-12 text-4xl font-bold leadi text-center sm:text-5xl">Frequently Asked Questions</h2>
+          <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What is the Document Object Model (DOM)?</summary>
+              <div class="px-4 pb-4">
+                <p>The Document Object Model (DOM) is a 
+                    programming interface for HTML and XML 
+                    
+                    documents. It represents the structure 
+                    of a document as a tree of nodes, allowing 
+                    developers to dynamically access and modify 
+                    content and structure of a document. The DOM is mostly
+                     used by web browsers to render web pages and by
+                      web developers to add interactivity to web pages.</p>
+              </div>
+
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">How do you select an element from the DOM?</summary>
+              <div class="px-4 pb-4">
+                <p>You can select an element from the DOM using the document object's methods, such as getElementById(), getElementsByClassName(), or querySelector(). You can also use the element's methods, such as parentNode, childNodes, and firstElementChild, to traverse the DOM and select the desired element.</p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">What is event delegation in the context of the DOM, and why is useful?</summary>
+              <div class="px-4 pb-4">
+                <p>Event delegation is a technique in which a parent element i
+                    s given an event listener and all its child elements are hand
+                    led by the same event listener. It is useful because it a
+                    llows us to handle events of multiple elements using 
+                    a single event listener, which can be 
+                    more efficient than adding event listeners to ea
+                    ch and every element. </p>
+              </div>
+            </details>
+            <details>
+              <summary class="py-2 outline-none cursor-pointer focus:underline">How do you manipulate an element's attributes and styles using the DOM?</summary>
+              <div class="px-4 pb-4">
+                <p>We can manipulate an element's attributes and styles using the DOM by accessing the corresponding property or method of the element. For example, we can change the value of an element's attribute by accessing the attribute property and assigning it a new value. We can also change the style of an element by accessing the style property and assigning it a new value. For example, element.style.backgroundColor = "blue" would change the background color of an element to blue. We can also add or remove a class name from an element using the classList property. For example, element.classList.add("className") would add the class name to the element, and element.classList.remove("className") would remove it. </p>
+              </div>
+            </details>
+           
+           
+          </div>
+        </div>
+      </section>
+      <script src="../Js/index.js"></script>
 </body>
 </html>
