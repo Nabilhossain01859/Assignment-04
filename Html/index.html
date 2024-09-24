@@ -23,26 +23,30 @@
     </style>
   </head>
   <body class="lexend-font">
-    <!-- navebar section -->
-    <nav class="navbar bg-base-100 py-4">
-      <div class="container mx-auto flex justify-between items-center">
-        <div class="left-nav">
-          <button class="btn bg-[#B4F461]">Blog</button>
+    <!-- header section -->
+    <header class="container mx-auto">
+      <!-- navbar section -->
+      <nav class="navbar bg-[#F9F7F3] flex md:flex-row 
+      flex-col justify-between p-4 gap-4 md:gap-0">
+        <!-- blog btn -->
+        <div>
+          <button class="btn text-lg bg-[#B4F461]">Blog</button>
         </div>
-        <div class="logo inline-flex items-center gap-2">
-          <img src="../assets/logo.png" alt="Logo" class="w-8 h-8" />
-          <p class="text-2xl">DonationCampaign</p>
+        <!-- logo + text -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/logo.png" alt="" />
+          <span class="md:text-3xl text-2xl font-bold">DonationCampaign</span>
         </div>
 
-        <div class="right-nav">
-          <div class="account-balance flex items-center gap-2">
-            <img src="../assets/coin.png" alt="" />
-            <span class="text-lg">0.00</span>
-            <span>BDT</span>
-          </div>
+        <!-- account balance -->
+        <div class="flex items-center gap-2">
+          <img src="../assets/coin.png" alt="" />
+          <h3 class="flex items-center gap-2 font-bold text-lg">
+            <span>0.00</span>BDT
+          </h3>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   </body>
   <script src="../Js/index.js"></script>
 </html>
