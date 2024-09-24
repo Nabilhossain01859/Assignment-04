@@ -10,9 +10,39 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .lexend-font {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold">hii</h1>
+  <body class="lexend-font">
+    <!-- navebar section -->
+    <nav class="navbar bg-base-100 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="left-nav">
+          <button class="btn bg-[#B4F461]">Blog</button>
+        </div>
+        <div class="logo inline-flex items-center gap-2">
+          <img src="../assets/logo.png" alt="Logo" class="w-8 h-8" />
+          <p class="text-2xl">DonationCampaign</p>
+        </div>
+
+        <div class="right-nav">
+          <div class="account-balance flex items-center gap-2">
+            <img src="../assets/coin.png" alt="" />
+            <span class="text-lg">0.00</span>
+            <span>BDT</span>
+          </div>
+        </div>
+      </div>
+    </nav>
   </body>
   <script src="../Js/index.js"></script>
 </html>
