@@ -13,15 +13,13 @@ const historyList = document.getElementById("history-list");
 donationButtons.addEventListener("click", () => {
   mainSection.classList.remove("hidden");
   historySection.classList.add("hidden");
-
-  donationButtons.classList.add("btn-active btn-success");
+  
 });
 
 historyButtons.addEventListener("click", () => {
   mainSection.classList.add("hidden");
   historySection.classList.remove("hidden");
- 
-  historyButtons.classList.add("btn-active btn-success");
+
   displayHistory();
 });
 
