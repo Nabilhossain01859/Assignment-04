@@ -10,16 +10,31 @@ const historySection = document.getElementById("history-section");
 const historyList = document.getElementById("history-list");
 
 
+
+function toggleActiveButton(activeButton) {
+  const buttons = [donationButtons, historyButtons];
+  buttons.forEach(button => {
+      if (button === activeButton) {
+          button.classList.add('bg-[#B4F461]'); 
+          button.classList.remove('bg-gray-200', 'text-black'); 
+      } else {
+          button.classList.remove('bg-[#B4F461]',);
+          button.classList.add('bg-gray-200', 'text-black');
+      }
+  });
+}
+
 donationButtons.addEventListener("click", () => {
   mainSection.classList.remove("hidden");
   historySection.classList.add("hidden");
+  toggleActiveButton(donationButtons);
   
 });
 
 historyButtons.addEventListener("click", () => {
   mainSection.classList.add("hidden");
   historySection.classList.remove("hidden");
-
+toggleActiveButton(historyButtons);
   displayHistory();
 });
 
