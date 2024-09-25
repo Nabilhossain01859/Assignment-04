@@ -9,14 +9,19 @@ const mainSection = document.getElementById("donate-cards");
 const historySection = document.getElementById("history-section");
 const historyList = document.getElementById("history-list");
 
+
 donationButtons.addEventListener("click", () => {
   mainSection.classList.remove("hidden");
   historySection.classList.add("hidden");
+
+  donationButtons.classList.add("btn-active btn-success");
 });
 
 historyButtons.addEventListener("click", () => {
   mainSection.classList.add("hidden");
   historySection.classList.remove("hidden");
+ 
+  historyButtons.classList.add("btn-active btn-success");
   displayHistory();
 });
 
@@ -66,17 +71,13 @@ function displayHistory() {
     const historyItem = document.createElement("div");
     historyItem.classList.add("history-item");
     historyItem.innerHTML = `
-               <div class="card bg-base-100 w-96 shadow-xl">
+               <div class="card bg-base-100 w-96 my-4 shadow-xl">
   <div class="card-body">
     <h2 class="card-title">${item.name}</h2>
     <p>${item.dateTime}</p>
     <p> ${item.amount} ৳ BDT</p>
   </div>
-  <figure class="px-10 pt-10">
-    <img
-      src="${item.img}"
-      alt="Shoes" />
-  </figure>
+  
 </div>
               `;
     historyList.appendChild(historyItem);
